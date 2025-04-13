@@ -2,7 +2,6 @@ import asyncio
 import json
 import logging
 import os
-import argparse
 import subprocess
 from typing import Optional
 from urllib.parse import urljoin
@@ -14,7 +13,7 @@ from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 import httpx
 from dotenv import load_dotenv
 
-from code_archive_wrapper.iagitup3 import git_clone, git_bundle
+from iagitup3 import git_clone, git_bundle
 
 load_dotenv()
 TG_TOKEN = os.environ['TG_TOKEN']

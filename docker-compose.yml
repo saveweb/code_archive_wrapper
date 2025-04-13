@@ -1,0 +1,8 @@
+services:
+  code_archive_warpper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./.env:/project/.env
+    restart: always
